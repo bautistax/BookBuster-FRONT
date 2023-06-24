@@ -1,0 +1,9 @@
+@import "../../Styles/colors.css";
+
+.card-background {
+    background-color: var(--color-cards); 
+  }
+
+.color-input {
+  color: var(--color-input);
+} 

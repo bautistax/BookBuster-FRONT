@@ -1,0 +1,127 @@
+/* Landing.css */
+.landing-page {
+  color: rgb(141, 151, 150);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 9%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.logo {
+  font-size: 10px;
+  margin-left: 15px;  
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttonLog,
+.buttonSign,
+.buttonAbout {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.content {
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 47%;
+  margin-top: 4%;
+  background-color: rgb(1, 1, 100);
+}
+
+.text-container {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden; /* Evita que la imagen se desborde en pantallas pequeñas */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 100%; /* Añadimos esta propiedad */
+  max-height: 100%; /* Añadimos esta propiedad */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al contenedor, recortando si es necesario */
+}
+
+.blue-box {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Cambia a un diseño de columna en pantallas pequeñas */
+  }
+  
+  .text-container, .image-container {
+    flex-basis: 100%;
+    padding: 10px;
+    justify-content: center; /* Centra los elementos en pantallas pequeñas */
+  }
+}
+
+
+.blue-box h2 {
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+}
+
+.blue-box h2:hover {
+  color: #9DC8C5;
+  transition: .8s;
+}
+
+.explore-button {
+  background-color: rgb(69, 70, 119);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.explore-button:hover{
+  background-color: rgb(51, 55, 163);
+  color: rgb(139, 189, 205);
+  transition: .6s;
+}
+
+.landing-switch {
+  display: flex;
+  margin-left: auto;
+  margin-right: 60px; 
+}

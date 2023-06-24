@@ -1,0 +1,120 @@
+@import "../../Styles/colors.css";
+  
+  .containerOne {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .containerOne .divAboutLeft {
+    width: 60%;
+    color: var(--color-text);
+  }
+
+  .containerOne .containerOneContent {
+    margin: 20px; 
+  }
+
+  .containerTwo {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+    margin-right: 45px;
+  }
+
+  .containerTwo .divAboutRight {
+    width: 60%;
+    color: var(--color-text);
+  }
+
+  .containerThree {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+    margin-left: 40px;
+  }
+  
+  .containerThree .divAboutttLeft {
+    width: 60%;
+    color: var(--color-text);
+  }
+  
+/*___________________________________*/
+
+  .global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    color: var(--color-text);
+  }
+
+  .titulo {
+    margin-bottom: 20px;
+  }
+
+  .containerFlex {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 80px;
+
+  }
+
+  .titluloFront,
+  .titluloBack {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+
+
+li {
+  margin-bottom: 10px;
+  transition: color 0.3s; /* Transición suave para el cambio de color */
+  position: relative; /* Necesario para posicionar los enlaces */
+  cursor: pointer; /* Cambiar el cursor al pasar el mouse por encima */
+}
+
+li:hover {
+  color: #52949c;
+}
+
+/* h3:hover, h2:hover {
+  color: #215961;
+} */
+
+/* p:hover{
+  color:#285f66;
+} */
+
+.titles{
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  body {
+    overflow-x: hidden;
+  }

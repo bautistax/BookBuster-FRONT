@@ -1,0 +1,46 @@
+.icon{
+    width: 30px;
+    height: 30px;
+    display: inline;
+}
+
+
+.reviews {
+    margin-top: 10px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+  
+  .comment:focus {
+    outline: none;
+    box-shadow: 0 0 3px #007bff;
+    max-height: none;
+  }
+  
+  .comment::placeholder {
+    color: #aaa;
+  }
+  
+  .comment:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+
+.rating-container {
+    display: inline-flex;
+  }
+  
+  .star {
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-right: 5px;
+  }
+  
+  .star:hover,
+  .star:focus {
+    color: #ffc107;
+  }
+  
